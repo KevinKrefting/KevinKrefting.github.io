@@ -1,1 +1,45 @@
-# KevinKrefting.github.io
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+
+	<!-- Erstelle das Dropdown-Menü -->
+	<select id="dropdown">
+		<option value="">Seiten...</option>
+		<option value="index.html">Home</option>
+		<option value="weiter.html">Blog</option>
+		<option value="many.html">Contact Us</option>
+		<option value="music.html">Music</option>
+	</select>
+
+	</header>
+
+<section>
+  <h1>Push Up, CreedsMy Ghost, Creeds.</h1>
+</section>
+
+	<section>
+	  <audio controls>
+	    <source src="media/pushup.mp3" type="audio/mpeg">Loading...
+	  </audio>
+	    <audio controls>
+	      <source src="media/myghost.mp3" type="audio/mpeg">Loading...
+	    </audio>
+	  </section>
+
+	<!-- Schreibe das JavaScript, um die Weiterleitung zu ermöglichen -->
+	<script>
+		var dropdown = document.getElementById("dropdown");
+		dropdown.onchange = function() {
+			var url = this.value;
+			window.location.href = url;
+		}
+	</script>
+
+</body>
+
+</html>
