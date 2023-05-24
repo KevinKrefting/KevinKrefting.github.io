@@ -1,1 +1,46 @@
-# KevinKrefting.github.io
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="refresh" content="5; url=media.html">
+	<title>Connect...</title>
+	<style>
+		#anzeige {
+		  font-size: 36px;
+			width: 5%;
+			height: 100px;
+			background-color: #12AAA1;
+			color: white;
+			text-align: center;
+			line-height: 20px;
+			transition: width 5s;
+		}
+	</style>
+	<link rel="stylesheet" href="css/connect.css">
+</head>
+<body>
+    <h1>Connect...</h1>
+    <section>
+      <p>If you not connected automatical, then you press <a href="media.html">This</a></p>
+
+
+	<!-- Erstelle die Anzeige -->
+	<div id="anzeige">0%</div>
+
+	<!-- Schreibe das JavaScript, um die Anzeige zu aktualisieren -->
+	<script>
+		var anzeige = document.getElementById("anzeige");
+		var prozent = 0;
+		var interval = setInterval(function() {
+			prozent++;
+			anzeige.innerHTML = prozent + "%";
+			anzeige.style.width = prozent + "%";
+			if (prozent == 100) {
+				clearInterval(interval);
+			}
+		}, 50);
+	</script>
+
+</body>
+
+</html>
+
