@@ -1,7 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
+<meta charset="utf-8"<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+	<!-- Erstelle das Dropdown-Menü -->
+	<select id="dropdown">
+		<option value="">Seiten...</option>
+		<option value="index.html">Home</option>
+		<option value="weiter.html">Blog</option>
+		<option value="many.html">Contact Us</option>
+		<option value="music.html">Music</option>
+	</select>
+</header>
+	<!-- Schreibe das JavaScript, um die Weiterleitung zu ermöglichen -->
+	<script>
+		var dropdown = document.getElementById("dropdown");
+		dropdown.onchange = function() {
+			var url = this.value;
+			window.location.href = url;
+		}
+	</script>
+
+</body>
+</html>
   <title>Home</title>
 <head>
 
@@ -19,6 +46,4 @@
 <iframe src="#">
   </section>
 <footer>
-  <adress>Bockmühle 87, 42289 Wuppertal, Germany</adress>
-  </body>
-  </html>
+  <adress>Bockmühle 87, 42289 Wuppertal, Ge
